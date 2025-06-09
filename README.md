@@ -1,5 +1,5 @@
-## SportiQ
-# 🧠 AI-Powered Emotion-Aware Pose Feedback System
+# SportiQ
+## 🧠 AI-Powered Emotion-Aware Pose Feedback System
 
 This project combines **Computer Vision**, **NLP**, and **Emotion Detection** to create an intelligent system that analyzes human movement and provides **personalized feedback**. It uses pose estimation to understand body movements, NLP to interpret advice, and emotion detection to adapt the feedback tone, delivering a more natural, human-like experience.
 
