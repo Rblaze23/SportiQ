@@ -1,49 +1,100 @@
-# 🏃‍♂️ Pose Analysis and Feedback System
+##SportiQ
+# 🧠 AI-Powered Emotion-Aware Pose Feedback System
 
-A computer vision project using **MediaPipe** and **OpenCV** to extract human pose landmarks from video frames and generate insightful feedback based on key joint angles. Ideal for analyzing athletic performance or movement quality.
+This project combines **Computer Vision**, **NLP**, and **Emotion Detection** to create an intelligent system that analyzes human movement and provides **personalized feedback**. It uses pose estimation to understand body movements, NLP to interpret advice, and emotion detection to adapt the feedback tone, delivering a more natural, human-like experience.
 
-## 📸 Features
+## 🔍 Project Overview
 
-- Extract frames from any video at a custom frame rate
-- Detect human pose landmarks using MediaPipe
-- Calculate angles at elbows, knees, and shoulders
-- Visualize pose skeletons and joints on each frame
-- Provide actionable feedback on posture and movement
+The system:
+- Extracts video frames
+- Detects human pose landmarks using **MediaPipe**
+- Computes key angles (elbows, hips, shoulders)
+- Detects the user's **emotional state** from facial features (or voice)
+- Uses **NLP** to generate **empathetic and actionable feedback**
+- Visualizes all this with **OpenCV**
+
+This project can be extended for:
+- Sports performance analysis
+- Fitness apps
+- Real-time movement coaching
+- Rehab and physiotherapy tools
 
 ---
 
-## 📁 Project Structure
-.
-├── pose_utils.py # Functions for pose detection and angle analysis
-├── video_utils.py # Video frame extraction at desired FPS
-├── input_video.mp4 # Your source video file (you provide this)
-├── extracted_frames/ # Auto-created folder for raw frames
-├── annotated_frames/ # Auto-created folder for frames with drawn pose and feedback
-└── main.py # (Optional) Integrate both utils for full pipeline
+## 🚀 Features
+
+### 🕺 Pose Detection with MediaPipe
+- Real-time human pose estimation
+- Extracts landmarks from frames
+- Calculates joint angles (elbow, hip, shoulder)
+
+### 🎥 Video Frame Extraction
+- Uses OpenCV to break down any video
+- Adjustable frame sampling rate
+- Saves extracted frames for analysis
+
+### 🧠 NLP-Driven Advice System
+- Analyzes angles and posture
+- Provides natural, interpretable feedback using simple NLP logic
+- Advice adapts to physical movement style
+
+### 😊 Emotion-Aware Response
+- (Optional) Detects user emotion from video or audio
+- Feedback tone adjusts: encouraging for frustrated users, detailed for neutral/happy ones
+
+### 🖼️ Annotated Output
+- Saves images with drawn landmarks and angle overlays
+- Allows visual comparison of posture before and after feedback
 
 ---
 
 ## 🧰 Technologies Used
 
-- [Python 3.x](https://www.python.org/)
-- [MediaPipe](https://google.github.io/mediapipe/)
-- [OpenCV](https://opencv.org/)
-- [NumPy](https://numpy.org/)
+| Domain           | Tools Used                            |
+|------------------|----------------------------------------|
+| Pose Estimation  | [MediaPipe](https://mediapipe.dev)     |
+| Computer Vision  | [OpenCV](https://opencv.org)           |
+| Math/Numerical   | [NumPy](https://numpy.org)             |
+| NLP              | Built-in string logic, OpenAI (ext.)   |
+| Emotion Detection| Custom / third-party models (ext.)     |
+| Language         | Python 3.x                             |
+
 
 ---
 
-## 🚀 Installation
+## 🛠️ Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/pose-analysis-feedback.git
-   cd pose-analysis-feedback
+1. **Clone the repo**
+```bash
+git clone https://github.com/yourusername/emotion-pose-feedback.git
+cd emotion-pose-feedback
 pip install -r requirements.txt
 pip install mediapipe opencv-python numpy
+pip install fer  # or any facial emotion recognition package
+
+📌 Future Enhancements
+🎯 Real-time webcam support
+
+🧠 Deep learning models for advanced advice generation
+
+💬 Voice feedback using text-to-speech
+
+📊 Exporting user progress reports (PDF/CSV)
+
+🕹️ Interactive web interface (Streamlit or Flask)
+
 🤝 Contributing
-Contributions are welcome! Please feel free to open issues or submit pull requests.
+Contributions are welcome! You can:
 
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Open issues
 
----
+Submit pull requests
+
+Suggest new use cases
+
+📄 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+👤 Author
+Ramy Lazghab
+📧 ramy.lazghab@dauphine.tn
