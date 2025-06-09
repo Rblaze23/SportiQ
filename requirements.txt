@@ -1,0 +1,8 @@
+streamlit==1.38.0
+opencv-python==4.10.0.84
+mediapipe==0.10.14
+deepface==0.0.93
+transformers==4.44.2
+numpy==1.26.4
+pandas==2.2.3
+plotly==5.24.1
